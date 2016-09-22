@@ -1,5 +1,5 @@
 Main project page:
-file:///C:/xampp/htdocs/p1/index.html
+http://www.terrywebdev.me/p1/
 
 Video link:
 http://screencast.com/t/P04cEEX4RnP
