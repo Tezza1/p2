@@ -30,7 +30,7 @@
 
           // PHP VALIDATION TO INCLUDE NUMBERS
           if (empty($_POST["includeNumber"])){
-            
+
           }
           else {
              $checkItem = $_POST["includeNumber"];
@@ -39,7 +39,7 @@
                 $inclNumber = "YES";
              }
           }
-          
+
 
           // PHP VALIDATION TO CHECK CASE OF LETTERS
           if (empty($_POST["radioCase"])) {
@@ -81,7 +81,7 @@
      $password = array();
 
      for ($i = 0; $i < $numberLength; $i++) {
-        
+
         // insert number
         if ($inclNumber == "YES" && $i%3 == 0) {
             $elementItem = rand(48,57);
@@ -90,7 +90,7 @@
             $elementItem = rand(35,38);
         }
         else {
-        
+
             if ( $case == "LOWER") {
                 $elementItem = rand(97,122);
             }
@@ -99,7 +99,7 @@
             }
             elseif ($case == "MIXED") {
                 $choose = rand(1,10);
-            
+
                 if ($choose%2 == 0){
                     $elementItem = rand(97,122);
                 }
@@ -111,9 +111,9 @@
                 // No items selected
             }
         }
-        
+
         if ($case != ""){
-               $password[$i] = chr($elementItem);       
+               $password[$i] = chr($elementItem);
         }
      }
 

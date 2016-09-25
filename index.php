@@ -12,17 +12,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-</head>
 <body>
     <header>
         <h1>Powerful Profession Password Provider & Protector</h1>
         <h3><em>Helping to generate safe passwords to protect your precious information</em></h3>
         <br>
     </header>
-    
+
     <img src="img/encryption.jpg" alt="Encrption" title="Encryption"/>
     <br>
-    
+
     <div class="column" id="instructions">
         <h3>Step 1</h3>
         <p><span class="keyText">Length:</span> Decide on the length of your password. All paswords should be a minimum of 10 characters and a maximum of 25 characters.</p>
@@ -43,7 +42,7 @@
             <!-- FORM INPUTS TO SPECIFY LENGTH OF PASSWORD -->
             <br>
             <div class="column">
-                
+
                 <label for="numberLength">Length of password (10 - 25):</label>
                 <br>
                 <input type="number" name="numberLength" placeholder="Enter length">
@@ -97,7 +96,7 @@
                 }
                 else {
                     for ($j = 0; $j < $numberLength; $j++) {
-                        echo $password[$j]; 
+                        echo $password[$j];
                     }
                 }
             ?>
